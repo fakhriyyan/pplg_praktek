@@ -1,0 +1,77 @@
+:root {
+    box-sizing: border-box;
+}
+
+html, body, * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #ffa500;
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#ingame {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffa500;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.option {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #ffa500;
+    border: 2px solid #ffa500;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.option:hover {
+    background-color: #ff8c00;
+    transform: scale(1.1);
+}
